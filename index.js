@@ -43,9 +43,9 @@ const option2=document.querySelector('#option2');
 const option3=document.querySelector('#option3');
 const option4=document.querySelector('#option4');
 const submit=document.querySelector('#submit');
-// var answers=new Array;
+
 answers=document.querySelectorAll('.answer');
-// var answers=[1,2,3,4];
+
 const showscore=document.querySelector('#showscore')
 
 var count=0;
@@ -66,7 +66,7 @@ const checkanswer=()=>{
     answers.forEach((currentelement)=> {
         if(currentelement.checked){
             a=currentelement.id
-            // console.log(currentelement);
+           
         }
     });
 return a;
@@ -78,8 +78,7 @@ const deselect=()=>{
         element.checked=false;
     });
 }
-// checkanswer();
-// const fil=answers.filter((element,index)=>{ let ans; if(element.checked){ans=element.id} return ans  })
+
 submit.addEventListener('click',()=>{
 const chkans=checkanswer();
     if(chkans == quiz[count].ans){
